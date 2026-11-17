@@ -1,0 +1,13 @@
+{
+  "accept_threshold": 0.46,
+  "cap": 3.0,
+  "fixed_on": "train split before any evaluation session was scored",
+  "k": 5,
+  "limits": {
+    "max_mimic_accept_rate": 0.35,
+    "max_owner_doubt_rate": 0.25,
+    "max_stranger_accept_rate": 0.2,
+    "max_swap_open_rate": 0.15
+  },
+  "train_hash": "67909bc258f605c4"
+}

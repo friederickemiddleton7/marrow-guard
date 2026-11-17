@@ -1,0 +1,128 @@
+{
+  "ablation": {
+    "one_score_no_split": {
+      "mimic_accept_rate": 0.6667,
+      "owner_accept_rate": 0.9583,
+      "stranger_accept_rate": 0.25,
+      "threshold_fixed_on_train": 0.33,
+      "tired_owner_accept_rate": 0.7083,
+      "train_balanced_accuracy": 0.7396
+    }
+  },
+  "checks": {
+    "mimic_accept_within_limit": true,
+    "owner_doubt_within_limit": true,
+    "stranger_accept_within_limit": true,
+    "swap_test_passes": true
+  },
+  "data": {
+    "caveat": "all recordings are synthetic; these rates describe the pipeline on the shipped fake data, not accuracy on real users",
+    "eval_sessions": 96,
+    "synthetic": true,
+    "train_sessions": 96
+  },
+  "limits": {
+    "max_mimic_accept_rate": 0.35,
+    "max_owner_doubt_rate": 0.25,
+    "max_stranger_accept_rate": 0.2,
+    "max_swap_open_rate": 0.15
+  },
+  "passed": true,
+  "per_style": {
+    "dictation": {
+      "mimic": {
+        "accept_rate": 0.0,
+        "mean_score": 0.3821,
+        "n": 8
+      },
+      "owner": {
+        "accept_rate": 0.875,
+        "mean_score": 0.5446,
+        "n": 8
+      },
+      "owner_tired": {
+        "accept_rate": 1.0,
+        "mean_score": 0.5371,
+        "n": 8
+      },
+      "stranger": {
+        "accept_rate": 0.0,
+        "mean_score": 0.3161,
+        "n": 8
+      }
+    },
+    "standard": {
+      "mimic": {
+        "accept_rate": 0.0,
+        "mean_score": 0.3911,
+        "n": 8
+      },
+      "owner": {
+        "accept_rate": 1.0,
+        "mean_score": 0.5582,
+        "n": 8
+      },
+      "owner_tired": {
+        "accept_rate": 0.875,
+        "mean_score": 0.5293,
+        "n": 8
+      },
+      "stranger": {
+        "accept_rate": 0.0,
+        "mean_score": 0.3462,
+        "n": 8
+      }
+    },
+    "switch": {
+      "mimic": {
+        "accept_rate": 0.0,
+        "mean_score": 0.4354,
+        "n": 8
+      },
+      "owner": {
+        "accept_rate": 0.75,
+        "mean_score": 0.5874,
+        "n": 8
+      },
+      "owner_tired": {
+        "accept_rate": 1.0,
+        "mean_score": 0.6268,
+        "n": 8
+      },
+      "stranger": {
+        "accept_rate": 0.0,
+        "mean_score": 0.4118,
+        "n": 8
+      }
+    }
+  },
+  "same_user_transfer": {
+    "dictation": 0.125,
+    "standard": 0.0,
+    "switch": 0.875
+  },
+  "summary": {
+    "mimic_accept_rate": 0.0,
+    "real_user_accept_rate": 0.9167,
+    "real_user_doubt_rate": 0.0833,
+    "stranger_accept_rate": 0.0,
+    "swap_open_rate_max": 0.0,
+    "swap_open_rate_mean": 0.0
+  },
+  "swap_test": {
+    "dictation": {
+      "mimic": 0.0,
+      "stranger": 0.0
+    },
+    "standard": {
+      "mimic": 0.0,
+      "stranger": 0.0
+    },
+    "switch": {
+      "mimic": 0.0,
+      "stranger": 0.0
+    }
+  },
+  "threshold": 0.46,
+  "threshold_source": "train split before any evaluation session was scored"
+}
